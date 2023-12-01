@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Book Beasts Catalog System</title>
+</head>
+<style>
+body {
+    background-image: url("lib5.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display:block;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    top: 10%;
+    left: 30%;
+}
+
+.container {
+    max-width: 400px;
+    margin: 10px;
+    margin-color:white;
+    background-color: rgba(26, 24, 39, 0.8); 
+    padding: 20px;
+    border-radius: 8px;
+     box-shadow: -3px -3px 9px #aaa9a9a2,
+              3px 3px 7px rgba(147, 149, 151, 0.671);
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: #4caf50;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+</style>
+
+<body>
+    <div class="container">
+        <h2>Register for Book Beasts Catalog System</h2>
+        <form id="registerForm">
+            <label for="newUsername">Username:</label>
+            <input type="text" id="newUsername" name="newUsername" required>
+            <br>
+            <label for="newPassword">Password:</label>
+            <input type="password" id="newPassword" name="newPassword" required>
+            <br>
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+            <br>
+            <button type="button" onclick="register()">Register</button>
+        </form>
+        <p>Already have an account? <a href="login.html">Login here</a>.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
